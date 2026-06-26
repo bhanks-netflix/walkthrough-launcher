@@ -9,7 +9,7 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 24px;
-      background: #f5f5f7;
+      background: #000000; /* black background */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -19,49 +19,65 @@
       width: 100%;
       text-align: center;
     }
+    .logo {
+      margin-bottom: 24px;
+    }
+    .logo img {
+      max-width: 120px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
     h1 {
       margin: 0 0 8px 0;
-      font-size: 28px;
+      font-size: 30px;  /* slightly larger title */
+      color: #ffffff;
     }
     p {
       margin: 0 0 24px 0;
-      color: #555;
-      font-size: 15px;
+      color: #e5e5e5;
+      font-size: 17px;  /* slightly larger body text */
     }
     .btn {
       display: block;
       width: 100%;
-      padding: 14px 16px;
-      margin-bottom: 12px;
+      padding: 16px 18px;         /* slightly taller buttons */
+      margin-bottom: 14px;
       border-radius: 999px;
       border: none;
-      background: #e50914; /* primary button color */
-      color: white;
-      font-size: 16px;
+      background: #e50914;        /* Netflix red for all buttons */
+      color: #ffffff;
+      font-size: 17px;            /* larger button text */
       font-weight: 600;
       text-decoration: none;
+      letter-spacing: 0.05em;
     }
-    .btn.secondary {
-      background: #1f1f1f; /* secondary buttons */
+    .btn:hover {
+      background: #f6121d;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- Netflix logo -->
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_N_logo.svg" alt="Netflix logo" />
+    </div>
+
     <h1>Walkthroughs</h1>
     <p>Select your building to open the correct checklist.</p>
 
     <!-- Replace these href values with your actual Airtable form URLs -->
-    <a class="btn" href="https://airtable.com/appRt0EZUXDC0e15v/paghAckZL8kcsien9/form?prefill_Building=ICON" target="_blank" rel="noopener">
-      ICON &mdash; LA Icon Campus
+    <a class="btn" href="ICON_FORM_URL" target="_blank" rel="noopener">
+      ICON
     </a>
 
-    <a class="btn secondary" href="https://airtable.com/appRt0EZUXDC0e15v/pagYwcRnu6sHGmMZ6/form?prefill_Building=CUE" target="_blank" rel="noopener">
-      CUE &mdash; Culver Campus
+    <a class="btn" href="CUE_FORM_URL" target="_blank" rel="noopener">
+      CUE
     </a>
 
-    <a class="btn secondary" href="https://airtable.com/appRt0EZUXDC0e15v/pagOH7vah5JVPioao/form?prefill_Building=BOC" target="_blank" rel="noopener">
-      BOC &mdash; Burbank Office Center
+    <a class="btn" href="BOC_FORM_URL" target="_blank" rel="noopener">
+      BOC
     </a>
   </div>
 </body>
