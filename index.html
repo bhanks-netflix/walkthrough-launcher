@@ -9,18 +9,22 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 60px;
-      background: #000000; /* black background */
+      background: #000000;
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 100vh; /* makes page fill full screen height */
+      min-height: 100vh;
       box-sizing: border-box;
     }
 
-    .container {
-      width: 306px;
+    .container,
+    .feedback-wrap {
+      width: 306px;       /* same width for top and bottom sections */
       max-width: 100%;
       text-align: center;
+    }
+
+    .container {
       margin: 0 auto;
     }
 
@@ -51,7 +55,7 @@
       display: block;
       width: 100%;
       padding: 16px 18px;
-      margin-bottom: 14px;
+      margin: 0 0 14px 0;
       border-radius: 999px;
       border: none;
       background: #e50914;
@@ -68,17 +72,13 @@
     }
 
     .feedback-wrap {
-      margin-top: auto;   /* pushes this section to the bottom */
-      width: 340px;
-      max-width: 100%;
-      text-align: center;
-      padding-top: 40px;  /* adds decent space above feedback button */
+      margin-top: auto;   /* pushes it toward bottom */
+      padding-top: 40px;  /* extra spacing above feedback button */
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Netflix logo -->
     <div class="logo">
       <img src="logo.png" alt="Walkthrough logo" />
     </div>
@@ -100,7 +100,7 @@
   </div>
 
   <div class="feedback-wrap">
-    <a class="btn" href="https://airtable.com/appfWoWqj95yMe6Ih/pagIu4kOemyrBCm1p/form" target="_blank" rel="noopener">
+    <a class="btn" href="PASTE_YOUR_FEEDBACK_FORM_LINK_HERE" target="_blank" rel="noopener">
       Feedback Form
     </a>
   </div>
