@@ -13,48 +13,66 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      min-height: 100vh; /* makes page fill full screen height */
+      box-sizing: border-box;
     }
+
     .container {
       width: 340px;
       max-width: 100%;
       text-align: center;
       margin: 0 auto;
     }
+
     .logo {
       margin-bottom: 24px;
     }
+
     .logo img {
       max-width: 96px;
       height: auto;
       display: block;
       margin: 0 auto;
     }
+
     h1 {
       margin: 0 0 8px 0;
-      font-size: 30px;  /* slightly larger title */
+      font-size: 30px;
       color: #ffffff;
     }
+
     p {
       margin: 0 0 24px 0;
       color: #e5e5e5;
-      font-size: 17px;  /* slightly larger body text */
+      font-size: 17px;
     }
+
     .btn {
       display: block;
       width: 90%;
-      padding: 16px 18px;         /* slightly taller buttons */
+      padding: 16px 18px;
       margin-bottom: 14px;
       border-radius: 999px;
       border: none;
-      background: #e50914;        /* Netflix red for all buttons */
+      background: #e50914;
       color: #ffffff;
-      font-size: 17px;            /* larger button text */
+      font-size: 17px;
       font-weight: 600;
       text-decoration: none;
       letter-spacing: 0.05em;
+      box-sizing: border-box;
     }
+
     .btn:hover {
       background: #f6121d;
+    }
+
+    .feedback-wrap {
+      margin-top: auto;   /* pushes this section to the bottom */
+      width: 340px;
+      max-width: 100%;
+      text-align: center;
+      padding-top: 40px;  /* adds decent space above feedback button */
     }
   </style>
 </head>
@@ -62,13 +80,12 @@
   <div class="container">
     <!-- Netflix logo -->
     <div class="logo">
-  <img src="logo.png" alt="Walkthrough logo" />
-  </div>
+      <img src="logo.png" alt="Walkthrough logo" />
+    </div>
 
     <h1>Walkthroughs</h1>
     <p>Select your building to start.</p>
 
-    <!-- Replace these href values with your actual Airtable form URLs -->
     <a class="btn" href="https://airtable.com/appfWoWqj95yMe6Ih/pagnVI1oBBlyUMY2t/form?prefill_Building=ICON" target="_blank" rel="noopener">
       ICON
     </a>
@@ -79,6 +96,12 @@
 
     <a class="btn" href="https://airtable.com/appfWoWqj95yMe6Ih/pagnafawXcDiTTg6a/form?prefill_Building=BOC" target="_blank" rel="noopener">
       BOC
+    </a>
+  </div>
+
+  <div class="feedback-wrap">
+    <a class="btn" href="https://airtable.com/appfWoWqj95yMe6Ih/pagIu4kOemyrBCm1p/form" target="_blank" rel="noopener">
+      Feedback Form
     </a>
   </div>
 </body>
